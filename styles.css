@@ -1,0 +1,73 @@
+/* .dezute {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: linear(-0.01 -17.51%, 0 32.6%, 0.18 74.91%, 1 100%);
+    transition-timing-function: cubic-bezier(1,-0.01, 0, 0.95);
+    transition: 2s transform cubic-bezier(1,-0.01, 0, 0.95), 1s background-color ease; 
+}   
+
+.dezute:hover {
+    background-color: orange;
+    transform: translateX(150px);
+}  */
+
+.dezute {
+    background-color: rgb(245, 123, 123);
+    width: 200px;
+    height: 200px;
+    animation-name: animacija2;
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 1; */
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: cubic-bezier(1,-0.01, 0, 0.95); */
+
+    /* @media (max-width: 500px) {
+        background-color: orange;
+    } */
+
+    /* @media (min-width: 500px) {
+        background-color: red;
+    } */
+}
+
+@keyframes animacija {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+@keyframes animacija2 {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(40px);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+    75% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
